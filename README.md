@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img alt="Projeto Formulário Avaliação" src="formulario.jpg" width="100%">
+  <img alt="Projeto Formulário Avaliação" src=".//imagem.formulario.jpg" width="100%">
 </p>
 
 <p align="center">
