@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, select, textarea{
+  font-family: "Roboto Flex",  serif;
+}
+
+body{
+  background: #BFD7E4;
+  position: relative;
+}
+
+body::before{
+  background: #293241;
+  content: "";
+  
+  width: 100%;
+  min-height: 28vh;
+
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.page{
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+header{
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 19vh;
+  max-height: 19vh;
+  padding-top: 3vh;
+
+  overflow: hidden;
+}
+
+header h1{
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: min(1px);
+  line-height: 3vh;
+  text-align: center;
+}
+
+header p{
+  font-weight: lighter;
+  font-size: min(1px);
+  line-height: 3vh;
+  text-align: center;
+}
+
+header img{
+  display: block;
+  justify-items: center;
+  margin: auto;
+  max-height: 40px;
+}
+
+form{
+  background-color: white;
+  width: 100%;
+  
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title1{
+  background: red;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.title2{
+  color: white;
+  font-weight: bold;
+  line-height: 9vh;
+  text-align: center;
+  border: none;
+}
+
+fieldset{
+  border: none;
+}
+
+.fieldset-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 85%;
+  margin: 0 auto;
+}
+
+fieldset legend{
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+
+
+  border-bottom: 1px solid #e6e6f0;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.input1-clas{
+  display: inline-flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.input1-clas input{
+  margin: 0 20vh 0 0;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label{
+  font-size: 14px;
+  line-height: 24px;
+  color: #67656d;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span{
+  margin-left: 12px;
+
+  font-size: 12px;
+  line-height: 20px;
+  color: #92909b;
+}
+
+.input-wrapper label span:hover{
+  color: #75727c;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select{
+  background: #e4e3e8;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 38px;
+  width: 100%;
+  min-width: 100%;
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #8d8993;
+} 
+
+.input-wrapper textarea{
+  padding: 0;
+  height: 168px;
+}
+
+.input-wrapper select{
+  appearance: none;
+  -webkit-appearance: none;
+  
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
+
+.checkbox-wrapper{
+  position: relative;
+}
+
+.checkbox-wrapper label{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+}
+
+.checkbox-wrapper input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:24px;
+  height:24px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before{
+  content: "";
+  width:24px;
+  height:24px;
+  border: 1px solid #e6e6f0;
+  display: block;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before{
+ background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_5001_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5001_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E ");
+}
+
+.checkbox-wrapper input:focus + label::before{
+outline: 2px solid black;
+}
+
+.col-3{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.col-3 > div:nth-child(1){
+  width: 100%;
+}
+
+footer{
+  background: white;
+  height: 140px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 30px;
+  margin-bottom: 50px;
+  
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button{
+  min-height: 40px;
+  background: red;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: white;
+}
+
+footer .button:hover{
+  background: rgb(205, 3, 3);
+}
+
+input:invalid{
+  border: 2px solid #ff1010;
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesafioFormulario</title>
+
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,
+  300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto
+  +Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:
+  wght@100..900&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>AVALIE SUA MENTORIA</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      <img src="./imagens/balao.svg" alt="imagem de um balão para avaliação da mentoria contendo cinco estrelas das quais as três primeiras estão completamente brancas e as demais transparentes">
+    </header>
+    
+    <div class="title1">
+      <legend class="title2">INFORMAÇÕES PESSOAIS</legend>
+    </div>
+
+    <form id="my-form">
+      <fieldset>
+        <div class="fieldset-wrapper">
+                  
+          <div class="input1-clas">
+            <div class="input-wrapper">
+              <label for="event-name">Nome</label>
+
+              <input 
+              type="text"
+              id="event-name"
+              required/>
+            </div>
+            
+            <div class="input-wrapper">
+              <label for="event-lastname">Sobrenome</label>
+              
+              <input
+              type="text"
+              id="event-lastname"
+              required/>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-mail">Email <span>(digite um email válido)</span></label>
+
+            <input 
+            type="email"
+            id="event-mail"
+            required/>
+          </div>
+        </div>        
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>INFORMAÇÕES DO MENTOR</legend>
+
+          <div class="input-wrapper">
+            <label for="yourmentor">Selecione o seu mentor</label>
+
+            <select id="yourmentor" required>
+              <option value="null" disabled selected hidden></option>
+              <option value="bcarvalho">Bruno Carvalho</option>
+              <option value="rmatias">Ricardo Matias</option>
+            </select>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="event-feedback">Feedback sobre o mentor</label>
+
+            <textarea
+             id="event-feedback"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input 
+            type="checkbox"
+            id="event-resolute">
+
+            <label for="event-resolute">Todas as dúvidas foram esclarecidas na mentoria</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>AGENDE A PRÓXIMA MENTORIA</legend>
+          
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="event-date">Data <span>(aa/mm/aaaa)</span></label>
+
+              <input type="date" id="event-date">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+
+              <input type="time" id="event-begin">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+
+              <input type="time" id="event-end">
+            </div>
+          </div>
+
+        </div>
+      </fieldset>
+    </form>
+
+      <footer>
+        <input 
+        class="button" 
+        type="submit"
+        form="my-form"
+        value="Enviar">
+      </footer>
+  </div>
+</body>
+</html>
