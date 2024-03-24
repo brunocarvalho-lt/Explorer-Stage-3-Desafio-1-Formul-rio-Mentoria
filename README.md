@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img alt="Projeto Formulário Avaliação" src="Imagem do WhatsApp de 2024-03-24 à(s) 20.35.30_8a866d07.jpg" width="100%">
+  <img alt="Projeto Formulário Avaliação" src="formulario.jpg" width="100%">
 </p>
 
 <p align="center">
